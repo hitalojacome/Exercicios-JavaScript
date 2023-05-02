@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vogal ou Consoante?</title>
+</head>
+<body>
+    <h1>Vamos verificar se a letra que você digitar é vogal ou consoante.</h1>
+    
+
+    <script>
+        let letra = prompt('Informe a Letra: ')
+
+        let vogal = ["a", "e", "i", "o", "u"]
+
+        if (letra.match(/[^\w\s]/gi) || letra.match(/[0-9]/gi)) {
+            alert("Digite apenas letras, sem caracteres especiais ou números.");
+        } else if (vogal.includes(letra.toLowerCase())) {
+            document.write("A letra digitada é uma vogal.")
+        } else {
+            document.write("A letra digitada é uma consoante.")
+        }   
+    </script>
+</body>
+</html>
