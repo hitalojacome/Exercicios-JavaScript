@@ -2,7 +2,7 @@ let carne = parseInt(prompt("Informe qual o tipo de carne você deseja\n1- Filé
 
 switch (carne) {
     case 1:
-        let kgFile = parseFloat(prompt("Informe a quantidade em Kgs do Filé Duplo:"));
+        let kgFile = parseFloat(prompt("Informe a quantidade em Kgs do Filé Duplo: "));
         if (kgFile <= 5) {
             valorFile = kgFile * 4.90;
         } else {
